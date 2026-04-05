@@ -14,7 +14,7 @@ By combining the cyclic state machine orchestration of **LangGraph** with the en
 Unlike linear chains, this agent utilizes a LangGraph state machine with dedicated `chatbot`, `tools`, and `lazy_monitor` nodes. If a generated SQL query hits an execution error (e.g., bad JOIN, syntax error), the error message flows directly back into the state graph. The LLM reasons about the cause and autonomously generates a corrected query on its next iteration.
 
 ### 2. The "Table Builder" (File Enrichment Pipeline)
-A major differentiator from standard chat interfaces. Users can upload spreadsheets (.xlsx, .csv, up to 50K rows) directly to the UI. The agent auto-detects join keys, generates a parameterized SQL template, and batches the file through the full enterprise security pipeline, left-merging database insights directly back into the user's spreadsheet.
+A major differentiator from standard chat interfaces. Users can upload spreadsheets (.xlsx, .csv) directly to the UI. The agent auto-detects join keys, generates a parameterized SQL template, and batches the file through the full enterprise security pipeline, left-merging database insights directly back into the user's spreadsheet.
 
 ### 3. Intelligent Multi-Database Routing
 Supply chain questions vary from live inventory tracking to historical forecasting. An auto-routing heuristic evaluates the LLM's target:
