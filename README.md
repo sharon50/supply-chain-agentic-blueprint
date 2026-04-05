@@ -29,7 +29,7 @@ Every interaction passes through a mandatory feedback gate.
 ## 🧠 The Intelligence Engine (Why DDL over RAG?)
 At the core of the system is a multi-provider LLM abstraction layer featuring exponential backoff and cross-provider fallback. The engine relies on:
 1. **Schema-as-Context (Full DDL):** We explicitly avoid vector-retrieval (RAG) for schemas. Deterministic loading of exact table structures into the context window guarantees the LLM always sees complete, accurate schemas, eliminating retrieval-quality hallucinations.
-2. **Business Context Injection:** Database schemas alone don't explain business logic. We dynamically inject domain knowledge (business rules, specific KPI definitions, OTIF logic) directly into the prompt.
+2. **Business Context Injection:** Database schemas alone don't explain business logic. We dynamically inject domain knowledge (business rules, specific KPI definitions) directly into the prompt.
 3. **Few-Shot Golden Queries:** Validated, human-approved SQL examples injected to steer the LLM toward highly optimized query patterns.
 
 ## 🛡️ Enterprise Guardrails (Data Access Control)
