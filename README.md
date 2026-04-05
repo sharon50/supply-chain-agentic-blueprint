@@ -18,8 +18,8 @@ A major differentiator from standard chat interfaces. Users can upload spreadshe
 
 ### 3. Intelligent Multi-Database Routing
 Supply chain questions vary from live inventory tracking to historical forecasting. An auto-routing heuristic evaluates the LLM's target:
-* **Operational DB (MySQL):** Handled for transactional, live inventory health lookups.
-* **Warehouse A (Vertica):** Handled for primary analytical aggregations, supply chain dimensions, and facts.
+* **TMS DB (MySQL):** Handled for Transportation Management System logistics data lookups.
+* **MRP DB (SQL Server):** Handled for Material Requirements Planning system material planning data lookups.
 
 ### 4. Continuous Learning & "Auto-PR" Loop
 Every interaction passes through a mandatory feedback gate. 
