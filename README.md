@@ -17,7 +17,7 @@ Unlike linear chains, this agent utilizes a LangGraph state machine with dedicat
 A major differentiator from standard chat interfaces. Users can upload spreadsheets (.xlsx, .csv) directly to the UI. The agent auto-detects join keys, generates a parameterized SQL template, and batches the file through the full enterprise security pipeline, left-merging database insights directly back into the user's spreadsheet.
 
 ### 3. Intelligent Multi-Database Routing
-Supply chain questions vary from live inventory tracking to historical forecasting. An auto-routing heuristic evaluates the LLM's target:
+Supply chain questions vary from live inventory tracking to historical forecasting. Built-in routing logic evaluates the LLM's target:
 * **TMS DB (MySQL):** Handled for Transportation Management System logistics data lookups.
 * **MRP DB (SQL Server):** Handled for Material Requirements Planning system material planning data lookups.
 
