@@ -1,7 +1,7 @@
 # Enterprise Agentic Supply Chain Blueprint
 **Autonomous Text-to-SQL Orchestration via NeMo & LangGraph**
 
-![Enterprise Agentic Supply Chain Blueprint](supply-chain-agentic-blueprint.png)
+
 
 ## 📌 Overview
 Most Text-to-SQL demos fail in production because they lack enterprise security, domain context, and the ability to autonomously recover from database errors. This repository contains the reference architecture for a production-ready, agentic data analyst designed specifically for Supply Chain operations.
@@ -25,6 +25,8 @@ Supply chain questions vary from live inventory tracking to historical forecasti
 Every interaction passes through a mandatory feedback gate. 
 * **Positive Feedback:** Automatically harvested, deduplicated by SQL fingerprint, and exported as a "Golden Query" candidate to improve few-shot prompting.
 * **Negative Feedback:** Auto-classified into GitHub issues, triggering a closed-loop system where an LLM generates fixes, runs automated regression tests, and creates an Auto-PR for owner review.
+
+![Enterprise Agentic Supply Chain Blueprint](supply-chain-agentic-blueprint.png)
 
 ## 🧠 The Intelligence Engine (Why DDL over RAG?)
 At the core of the system is a multi-provider LLM abstraction layer featuring exponential backoff and cross-provider fallback. The engine relies on:
