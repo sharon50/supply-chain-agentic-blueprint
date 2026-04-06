@@ -2,6 +2,8 @@
 **Autonomous Text-to-SQL Orchestration via NeMo & LangGraph**
 
 ![Enterprise Agentic Supply Chain Blueprint](supply-chain-agentic-blueprint.png)
+
+
 ![Enterprise Agentic Supply Chain Blueprint](supply-chain-agentic-ui.png)
 
 
