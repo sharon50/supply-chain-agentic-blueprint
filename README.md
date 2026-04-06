@@ -2,6 +2,8 @@
 **Autonomous Text-to-SQL Orchestration via NeMo & LangGraph**
 
 ![Enterprise Agentic Supply Chain Blueprint](supply-chain-agentic-blueprint.png)
+![Enterprise Agentic Supply Chain Blueprint](supply-chain-agentic-ui.png)
+
 
 ## 📌 Overview
 Most Text-to-SQL demos fail in production because they lack enterprise security, domain context, and the ability to autonomously recover from database errors. This repository contains the reference architecture for a production-ready, agentic data analyst designed specifically for Supply Chain operations.
